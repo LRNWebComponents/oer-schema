@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`oer-schema`
+A LRN element
+
+@demo demo/index.html 
+-->
+
+<dom-module id="oer-schema">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'oer-schema',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'oer-schema',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
