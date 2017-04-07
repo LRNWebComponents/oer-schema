@@ -2,9 +2,9 @@
 
 <!--
 `oer-schema`
-A LRN element
+A LRN element to wrap an oer schema prefix onto materials.
 
-@demo demo/index.html 
+@demo demo/index.html
 -->
 
 <dom-module id="oer-schema">
@@ -14,7 +14,9 @@ A LRN element
         display: block;
       }
     </style>
-    <h2>Hello [[prop1]]</h2>
+    <div prefix="oer: http://oerschema.org/">
+      <content></content>
+    </div>
   </template>
 
   <script>
@@ -23,10 +25,6 @@ A LRN element
       is: 'oer-schema',
 
       properties: {
-        prop1: {
-          type: String,
-          value: 'oer-schema',
-        },
       },
 
     });
