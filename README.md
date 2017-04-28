@@ -1,4 +1,4 @@
-# \<boiler-plate\>
+# \<oer-schema\>
 
 A LRN element
 
