@@ -20,7 +20,7 @@
       <h3>Basic oer-schema demo</h3>
       <demo-snippet>
         <template>
-          <oer-schema>
+          <oer-schema related-resource="#some-other-element">
             <div typeof="oer:SupportingMaterial">
               <h2 property="oer:name">My resource name</h2>
               <div property="oer:description">
@@ -28,6 +28,14 @@
               </div>
             </div>
           </oer-schema>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered">
+      <h3>Alternate style oer-schema demo</h3>
+      <demo-snippet>
+        <template>
+          <oer-schema oer-property="name" related-resource="#some-other-element" text="Cartesian mapping"></oer-schema>
         </template>
       </demo-snippet>
     </div>
